@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Portofolio KR</title>
+</head>
+<body>
+    <!-- Navbar -->
+      <header class="navbar fixed top-0 left-0 right-0 bg-gray-800 shadow p-4 flex justify-between items-center z-50">
+        <!-- LOGO dan Nama -->
+        <div class="flex items-center space-x-2">
+          <img src="logo_smk-removebg-preview.png" alt="Logo" class="w-8 h-8">
+          <img src="Logo-RPL.png" alt="Logo" class="w-8 h-8">
+          <h1 class="text-2xl text-white font-bold">Kurnia</h1>
+        </div>
+
+        <!-- Navigasi -->
+        <nav class="space-x-4">
+          <a href="#Home" class="text-sm text-white hover:text-cyan-400">Home</a>
+          <a href="#About" class="text-sm text-white hover:text-cyan-400">About</a>
+          <a href="#Skills" class="text-sm text-white hover:text-cyan-400">Skills</a>
+          <a href="#Portofolio" class="text-sm text-white hover:text-cyan-400">Portofolio</a>
+          <a href="#Contact" class="text-sm text-white hover:text-cyan-400">Contact</a>
+        </nav>
+
+        <!-- Ikon Sosial -->
+        <div class="space-x-2">
+          <a href="#"><img class="inline w-5" src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img class="inline w-5" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+        </div>
+      </header>
+
+      <!--Hero Section-->
+      <section class="home bg-#0B1A2A" id="Home">
+        <div class="hero-photo flex items-center justify-between gap-0  w-64 h-72 p-2 glow-ring">
+          <img src="foto forml 4.jpg"
+               alt="Foto Dummy"
+               class=" w-full h-full object-cover border-4 border-white semi-oval-img " />
+        </div>
+        <div class="teks-muncul home-content text-gray-100">
+          <h3>Hello, it's Me</h3>
+            <h1>Kurnia Rahmadani</h1>
+            <div class="home-content text-cyan-400 ">
+              <h3><span class="text"><strong id="typing-text" class="text-cyan-400"></strong></span></h3>
+            </div>
+          <P>I am a student majoring in RPL, who wants to learn about design, coding, and other tools.</P>
+          <div class="home-sci icon-animate">
+              <a href="https://www.instagram.com/kurniarhh_" target="_blank" rel="noopener noreferrer">
+                 <i class='icon-animate bx bxl-instagram-alt' style="animation-delay: 0.4s;"></i>
+              </a>
+              <a href="https://twitter.com/Kurniarhm_" target="_blank" rel="noopener noreferrer">
+                  <i class='icon-animate bx bxl-twitter' style="animation-delay: 0.4s;"></i>
+              </a>
+              <a href="https://wa.me/6285879404655" target="_blank" rel="noopener noreferrer">
+                  <i class='icon-animate bx bxl-whatsapp' style="animation-delay: 0.4s;"></i>
+              </a>
+              <a href="https://www.tiktok.com/@kurni4rh_" target="_blank" rel="noopener noreferrer">
+                  <i class='icon-animate bx bxl-tiktok' style="animation-delay: 0.4s;"></i>
+              </a>
+          </div>
+          <a href="#More About Me" class="btn-box">More About Me</a>
+        </div>
+        </div>
+      </section>
+
+      <!-- Typing Animation Script -->
+    <script>
+      const text = "a Student of SMK N Tengaran.";
+      const typingTarget = document.getElementById("typing-text");
+      let index = 0;
+  
+      function typeEffect() {
+        if (index < text.length) {
+          typingTarget.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeEffect, 100);
+        }
+      }
+  
+      window.onload = typeEffect;
+    </script>
+  
+    <!-- Slow spin animation -->
+    <style>
+      @keyframes spin-slow {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 6s linear infinite;
+      }
+    </style>
+      
+      <div class="bg-blue-900 text-sm py-2 text-center">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+          ✨ this is about me • this is about me • this is about me •  this is about me •  this is about me • Get in Touch ✨
+        </marquee>
+      </div>
+    
+      <!-- About Section -->
+      <section class="home py-3  mb-0" id="About">
+          <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10" id="More About Me">
+              <div class="max-auto text-center md:text-left">
+                <h1 class="typing-container text-4xl font-bold text-gray-200 mb-4">Hello, I’m Kurnia.</h1>
+                <p class="text-gray-200 mb-6 text-1xl leading-relaxed">
+                  My full name is KURNIA RAHMADANI, I'am 15 years old, I was born on September 14, 2009, I have 2 older brothers. My house is in Kaligandu village rt 14 rw 03. Currently I am studying at SMK N 1 Tengaran, a favorite school for all students. I chose the RPL/Software Engineering major, because I want to know more about software.I want to continue my education to a higher level and hopefully that will be achieved.
+                </p>
+                <p class="text-red-500 mb-6">
+                  If you want to find out more about me and the services I offer, Contact me. →
+                </p>
+                <a href="#Contact me" class="inline-block btn-box text-white border border-white px-5 py-2 rounded-full hover:bg-orange-600 hover:text-white transition">
+                  Contact me
+                </a>
+              </div>
+              <div class="flex-shrink-0 glow-ring-circle gambar-masuk-keluar">
+                <img src="fot formal.jpg" alt="gambar-masuk-keluar"
+                    class="w-64 h-64 object-cover rounded-full border-4 border-white shadow-xl object-cover gambar-masuk-keluar" />
+              </div>
+          </div>
+      </section>
+      <hr>
+
+      <!--skils-->
+    <section class="p-10 bg-gray-900 text-white font-sans" id="Skills">
+      <div class="contact-form slide-in-bottom">
+        <h3 class="sm:text-4xl font-medium title-font text-center mb-8 text-cyan-400">My Skils</h3>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-10">
+          
+          <div>
+            <h3 class="text-2xl font-semibold underline underline-offset-8 mb-8">Technical Skills</h3>
+            <!-- Skill bar -->
+            <div class=" mb-4">
+              <p class="flex items-center gap-2 mb-1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-5 h-5" />
+                HTML
+              </p>
+              <div class="skill-bar">
+                <div class="skill-fill fill-html">90%</div>
+              </div>
+            </div>
+    
+            <div class="mb-4">
+              <p class="flex items-center gap-2 mb-1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-5 h-5" />
+                CSS
+              </p>
+              <div class="skill-bar">
+                <div class="skill-fill fill-css">60%</div>
+              </div>
+            </div>
+    
+            <div class="mb-4">
+              <p class="flex items-center gap-2 mb-1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5" />
+                JavaScript
+              </p>
+              <div class="skill-bar">
+                <div class="skill-fill fill-js">45%</div>
+              </div>
+            </div>
+    
+            <div class="mb-4">
+              <p class="flex items-center gap-2 mb-1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-5 h-5" />
+                Python
+              </p>
+              <div class="skill-bar">
+                <div class="skill-fill fill-python">40%</div>
+              </div>
+            </div>
+    
+            <div class="mb-4">
+              <p class="flex items-center gap-2 mb-1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-5 h-5" />
+                React
+              </p>
+              <div class="skill-bar">
+                <div class="skill-fill fill-react">35%</div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Professional Skills -->
+          <div>
+            <h3 class="text-2xl font-semibold underline underline-offset-4 mb-12">Professional Skills</h3>
+            <div class="grid grid-cols-2 gap-6">
+              <!-- Circular Progress -->
+              <div class="circle-skill flex flex-col items-center">
+                <div class="circle progress-90">
+                  <span>90%</span>
+                </div>
+                <p>Creativity</p>
+              </div>
+    
+              <div class="circle-skill flex flex-col items-center">
+                <div class="circle progress-70">
+                  <span>70%</span>
+                </div>
+                <p>Comunication</p>
+              </div>
+    
+              <div class="flex flex-col items-center">
+                <div class="circle progress-60">
+                  <span>60%</span>
+                </div>
+                <p>Teamwork</p>
+              </div>
+    
+              <div class="flex flex-col items-center">
+                <div class="circle progress-85">
+                  <span>85%</span>
+                </div>
+                <p>Leadership</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!--end of skils-->
+      
+    <div class="bg-blue-900 text-sm py-2 text-center">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        ✨this is about me • this is about me • this is about me •  this is about me •  this is about me • Get in Touch ✨
+      </marquee>
+    </div>
+      
+    <!--Project-->
+  <section class="text-gray-600 bg-gray-900 body-font" id="Portofolio">
+    <div class="slide-in-right container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-5xl font-bold">
+          <span class="text-cyan-400">Project</span>
+        </h2>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This is a project and assignment that I made in this X-PPLG 4 class. I create various kinds and forms of websites.</p>
+      </div>
+      <a href="https://hziqu.github.io/projek1/" target="_blank">
+      <div class="flex flex-wrap -m-4 ">
+        <div class="lg:w-1/3 sm:w-1/2 p-4 relative group rounded-lg overflow-hidden transition duration-500 hover:shadow-[0_0_25px_#00ffff]">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="hindu-budha.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-50">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">PROJECT 1</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Hindu-Budha</h1>
+              <p class="leading-relaxed">This is the first website project assignment that I made with my group friends.</p>
+              <button class="bg-Orange-500 btn-box hover:bg-Orange-700 text-white px-4 py-2 rounded">See More</button>
+            </div>
+          </div>
+        </a>
+        </div>
+        <a href="https://safakreatif.github.io/tugas-satu-kucrut/" target="_blank">
+        <div class="lg:w-1/3 sm:w-1/2 p-4 relative group rounded-lg overflow-hidden transition duration-300 hover:shadow-[0_0_25px_#00ffff]">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="tugas 1.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-50">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">TUGAS 1 (SMT 2)</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Computer</h1>
+              <p class="leading-relaxed">This is the first practice assignment I made in semester 2.</p>
+              <button class="bg-orange-500 btn-box hover:bg-orange-700 text-white px-4 py-2 rounded">See More</button>
+            </div>
+          </div>
+        </a>
+        </div>
+        <a href="https://safakreatif.github.io/kurnia/" target="_blank">
+        <div class="lg:w-1/3 sm:w-1/2 p-4 relative group rounded-lg overflow-hidden transition duration-500 hover:shadow-[0_0_25px_#00ffff]">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="tugas 2 smt 2.jpeg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-50">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">TUGAS 2</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Travel</h1>
+              <p class="leading-relaxed">This is the second assignment I made in semester 2 of WEBSITE TRAVEL.</p>
+              <button class="bg-orange-500 btn-box hover:bg-orange-700 text-white px-4 py-2 rounded">See More</button>
+            </div>
+          </div>
+        </a>
+        </div>
+        <a href="https://kurniarahma14.github.io/shop/" target="_blank">
+        <div class="lg:w-1/3 sm:w-1/2 p-4 relative group rounded-lg overflow-hidden transition duration-500 hover:shadow-[0_0_25px_#00ffff]">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="banner-img-1.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-50">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">TUGAS 3</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooping</h1>
+              <p class="leading-relaxed">This is the third assignment I made in the semester 2 of WEBSITE SHOOPING</p>
+              <button class="bg-orange-500 btn-box hover:bg-orange-700 text-white px-4 py-2 rounded">See More</button>
+            </div>
+          </div>
+        </a>
+        </div>
+        <a href=" https://kurniarahma14.github.io/website-hosppital/" target="_blank">
+        <div class="lg:w-1/3 sm:w-1/2 p-4 relative group rounded-lg overflow-hidden transition duration-500 hover:shadow-[0_0_25px_#00ffff]">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="hero-carousel-3.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-50">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">TUGAS 4</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Hospital</h1>
+              <p class="leading-relaxed">This is the fourth assignment I made in the semester 2 of WEBSITE HOSPITAL.</p>
+              <button class="bg-orange-500 btn-box hover:bg-orange-700 text-white px-4 py-2 rounded">See More</button>
+            </div>
+          </div>
+        </a>
+        </div>
+        <a href="https://kurniarahma14.github.io/pet-place/" target="_blank">
+        <div class="lg:w-1/3 sm:w-1/2 p-4 relative group rounded-lg overflow-hidden transition duration-500 hover:shadow-[0_0_25px_#00ffff]">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="about-2.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-50">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">TUGAS 5</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pet Place</h1>
+              <p class="leading-relaxed">This is the fifth assignment I made in semester 2 of WEBSITE PET PLACE</p>
+              <button class="bg-orange-500 btn-box hover:bg-orange-700 text-white px-4 py-2 rounded">See More</button>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of project-->
+  
+    <div class="bg-blue-900 text-sm py-2 text-center">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+          ✨this is about me • this is about me • this is about me •  this is about me •  this is about me • Get in Touch ✨
+        </marquee>
+      </div>
+
+  <!--contact-->
+  <section class="bg-[#0f172a] text-white py-16 px-8 md:px-16" id="Contact">
+    <div class="slide-in-bottom max-w-7xl mx-auto grid md:grid-cols-2 gap-12" id="Contact me">
+      <div>
+        <h2 class="text-5xl font-bold">
+          Contact <span class="text-cyan-400">Me</span>
+        </h2>
+        <p class="mt-4 text-lg font-semibold">Let's work together</p>
+        <p class="mt-2 text-gray-300">
+          I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.
+        </p>
+  
+        <div class="home-sci mt-6 flex flex-col gap-3">
+          <div class="flex items-center gap-3 text-cyan-400">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+               <path d="M2.94 6.34a8 8 0 1011.31 11.31l-2.12-2.12a5 5 0 11-7.07-7.07L2.94 6.34z"></path>
+            </svg>
+            <span>081809208710</span>
+          </div>
+          <div class="flex items-center gap-3 text-cyan-400">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3.5A1.5 1.5 0 013.5 2h13A1.5 1.5 0 0118 3.5v13a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 012 16.5v-13zM3.5 3a.5.5 0 00-.5.5V5l7 4.5L17 5V3.5a.5.5 0 00-.5-.5h-13z"></path>
+            </svg>
+            <span>Kurniarahma495@gmail.com</span>
+          </div>
+          <div class="home-sci icon-animate">
+           <a href="https://www.instagram.com/kurniarhh_" target="_blank" rel="noopener noreferrer">
+                 <i class='icon-animate bx bxl-instagram-alt' style="animation-delay: 0.4s;"></i>
+              </a>
+              <a href="https://twitter.com/Kurniarhm_" target="_blank" rel="noopener noreferrer">
+                  <i class='icon-animate bx bxl-twitter' style="animation-delay: 0.4s;"></i>
+              </a>
+              <a href="https://wa.me/6285879404655" target="_blank" rel="noopener noreferrer">
+                  <i class='icon-animate bx bxl-whatsapp' style="animation-delay: 0.4s;"></i>
+              </a>
+              <a href="https://www.tiktok.com/@kurni4rh_" target="_blank" rel="noopener noreferrer">
+                  <i class='icon-animate bx bxl-tiktok' style="animation-delay: 0.4s;"></i>
+              </a>
+        </div>
+        </div>
+      </div>
+  
+      <form class="bg-gray-800 p-6 rounded-lg shadow-lg space-y-4">
+        <input type="text" placeholder="Enter Your Name" class="w-full p-3 bg-gray-700 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <input type="email" placeholder="Enter Your Email" class="w-full p-3 bg-gray-700 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <input type="text" placeholder="Enter Your Addres" class="w-full p-3 bg-gray-700 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <textarea rows="5" placeholder="Enter Your Message" class="w-full p-3 bg-gray-700 rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+        <button type="submit" class="btn-box bg-orange-400 text-black px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300 float-right">
+          Send
+        </button>
+      </form>
+    </div>
+  </section>
+  <!--end of contact-->
+
+  <!--footer-->
+  <footer class="text-gray-600 bg-gray-800 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-cyan-400 tracking-widest text-sm mb-3">KURNIA<br>RAHMADANI</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white hover:text-gray-600">First Link</a>
+            </li>
+            </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-cyan-400 tracking-widest text-sm mb-3">NAVIGATION</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white hover:text-gray-600">Home</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-600">About</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-600">Portfolio</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-600">Contact</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-cyan-400 tracking-widest text-sm mb-3">CONTACT</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white hover:text-gray-600">Kurniarahma495@gmail.com</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-600">0812-0087-9765</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-600">ig:@Kurniarh_</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-600">tt:kurni4</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-cyan-400 tracking-widest text-sm mb-3">Addres</h2>
+          <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <p class="text-gray-500 text-sm mt-2 md:text-left text-center">dsn.Kaligandu,klero 14/03
+                <br class="lg:block hidden">Kec,Tengaran. Kab,Semarang
+              </p>
+              <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white btn-box bg-orannge-500 border-0 py-2 px-6 focus:outline-none bg-orange-600 hover:bg-orange-600 rounded">Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2025 Kurniarh_ —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@kurni4</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  <!--end of footer-->
+      <script src="main.js"></script>
+</body>
+</html>
